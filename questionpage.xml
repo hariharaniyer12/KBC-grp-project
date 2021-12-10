@@ -1,1 +1,214 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="372dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="20dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="55dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textAllCaps="true"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="41dp"
+        android:text="TextView"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/kbc"
+        android:layout_width="327dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:text="KBC GAME"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="172dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="38dp"
+        android:text="SUBMIT"
+        android:onClick="submitans"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:onClick="fiftyfifty"
+        android:text="50/50"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Check"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:onClick="Check"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Change"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:onClick="Change"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="172dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="38dp"
+        android:text="LEAVE"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:onClick="leave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="136dp"
+        android:text="MONEY"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kbc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
